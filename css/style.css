@@ -9,28 +9,32 @@ yellow: FFD454;
 
 @font-face {
   font-family: "Phenomena";
-  src: url(../fonts/Phenomena-Regular.ttf) format("truetype");
+  src: url(../fonts/Phenomena-Regular.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Phenomena Bold";
+  src: url(../fonts/Phenomena-Bold.otf) format("truetype");
 }
 
 p.customfont {
-  font-family: "Phenomena", Helvetica, Arial, sans-serif;
+  font-family: "Phenomena Bold", "Phenomena", Helvetica, Arial, sans-serif;
 }
 
-
 h1 {
-  font-family: Phenomena, Helvetica, Arial,  sans-serif;
+  font-family: "Phenomena Bold", Helvetica, Arial,  sans-serif;
   font-size: 36px;
   text-transform: uppercase;
   margin-bottom: 50px;
 }
 
 h2 {
-  font-family: Phenomena, Helvetica, Arial,  sans-serif;
+  font-family: "Phenomena Bold", Helvetica, Arial,  sans-serif;
   font-size: 20px;
 }
 
 h3 {
-  font-family: Phenomena, Helvetica, Arial,  sans-serif;
+  font-family: "Phenomena Bold", Helvetica, Arial,  sans-serif;
   font-size: 15px;
 }
 
@@ -58,6 +62,11 @@ a:hover, a:focus, a:active {
   -o-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+}
+
+.solo-title {
+  color:#5DCCCB;
+  margin-bottom: 15px;
 }
 
 /* Home */
