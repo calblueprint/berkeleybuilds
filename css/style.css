@@ -1,18 +1,36 @@
 /* about */
 
+.cohost {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+  margin: 15px;
+  display: inline-block;
+  opacity: 0.6;
+}
+
 .cohost.blueprint-logo {
   background-image: url("../img/cohosts/blueprint.png");
 }
 
-.cohost.calhacks-logo {
-  background-image: url("../img/cohosts/calhacks.png");
+.cohost.tbg-logo {
+  background-image: url("../img/cohosts/tbg.png");
 }
 
-.cohost.cs4good-logo {
-  background-image: url("../img/cohosts/cssocialgood.png");
+.cohost.asuc-logo {
+  background-image: url("../img/cohosts/asuc.png");
 }
 
-.cohost.treehacks-logo {
-  background-image: url("../img/cohosts/treehacks.svg");
+.cohost.hab-logo {
+  background-image: url("../img/cohosts/hab.png");
 }
 
+.cohost.rishi-logo {
+  background-image: url("../img/cohosts/rishi.png");
+}
+
+.cohost.enable_tech-logo {
+  background-image: url("../img/cohosts/enable_tech.png");
+}
