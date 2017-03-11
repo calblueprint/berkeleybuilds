@@ -7,7 +7,7 @@ yellow: FFD454;
 
 /* about */
 
-.cohost {
+.cohost, .nonprofit {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -40,4 +40,32 @@ yellow: FFD454;
 
 .cohost.enable_tech-logo {
   background-image: url("../img/cohosts/enable_tech.png");
+}
+
+.nonprofit.rishi-logo {
+  background-image: url("../img/nonprofits/rishi.png");
+}
+
+.nonprofit.acumen-logo {
+  background-image: url("../img/nonprofits/acumen.png");
+}
+
+.nonprofit.back_to_the_roots-logo {
+  background-image: url("../img/nonprofits/back2daroots.png");
+}
+
+.bawar-logo {
+  background-image: url("../img/nonprofits/bawar.png");
+}
+
+.nonprofit.easy_does_it-logo {
+  background-image: url("../img/nonprofits/ezdoesit.png");
+}
+
+.nonprofit.root_and_rebound-logo {
+  background-image: url("../img/nonprofits/rootandrebound.png");
+}
+
+.nonprofit.teach_for_america-logo {
+  background-image: url("../img/nonprofits/tfa.png");
 }
