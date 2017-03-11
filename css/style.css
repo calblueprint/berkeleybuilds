@@ -8,52 +8,56 @@ yellow: FFD454;
 /* Typography */
 
 @font-face {
-    font-family: "Phenomena";
-    src: url(../fonts/Phenomena-Regular.ttf) format("truetype");
+  font-family: "Phenomena";
+  src: url(../fonts/Phenomena-Regular.ttf) format("truetype");
 }
 
 p.customfont {
-    font-family: "Phenomena", Helvetica, Arial, sans-serif;
+  font-family: "Phenomena", Helvetica, Arial, sans-serif;
 }
 
 
 h1 {
-    font-family: Phenomena, Helvetica, Arial,  sans-serif;
-    font-size: 36px;
-    text-transform: uppercase;
-    margin-bottom: 50px;
+  font-family: Phenomena, Helvetica, Arial,  sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 h2 {
-    font-family: Phenomena, Helvetica, Arial,  sans-serif;
-    font-size: 20px;
+  font-family: Phenomena, Helvetica, Arial,  sans-serif;
+  font-size: 20px;
+}
 
+h3 {
+  font-family: Phenomena, Helvetica, Arial,  sans-serif;
+  font-size: 15px;
 }
 
 p {
-    font-size: 16px;
-    letter-spacing: normal;
-    line-height: 28px;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 28px;
 }
 
 a {
-    color: #FFB900;
-    text-decoration: none;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+  color: #FFB900;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 a:hover, a:focus, a:active {
-    color: #FFB900;
-    text-decoration: none;
-    border-bottom: 1px solid #FFB900;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-    cursor: pointer;
+  color: #FFB900;
+  text-decoration: none;
+  border-bottom: 1px solid #FFB900;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 
 /* Home */
@@ -71,8 +75,26 @@ a:hover, a:focus, a:active {
 .home-title {
   font-family: Phenomena, Helvetica, Arial,  sans-serif;
   font-size:74px;
-  color: #FD5C63;
+  color: #5DCCCB;
   line-height: 72px;
+}
+
+.home-sub-title{
+    font-size: 36px;
+    color: #5DCCCB;
+}
+
+.home-info{
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+.home-button{
+    font-family: Phenomena, Helvetica, Arial,  sans-serif;
+    font-size:24px;
+    color: #FFD454;
+    line-height: 72px;
+    text-transform: uppercase;
 }
 
 /* About */
