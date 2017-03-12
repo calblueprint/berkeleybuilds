@@ -265,21 +265,15 @@ section#sponsors {
     text-decoration: none; }
   section#sponsors img:hover {
     opacity: 1; }
-  section#sponsors .super-plat img {
+  section#sponsors .gold img {
     max-width: 400px;
     max-height: 150px; }
-  section#sponsors .plat img {
+  section#sponsors .silver img {
     max-width: 350px;
     max-height: 200px; }
-  section#sponsors .gold img {
+  section#sponsors .bronze img {
     max-width: 250px;
     max-height: 125px; }
-  section#sponsors .silver img {
-    max-width: 150px;
-    max-height: 100px; }
-  section#sponsors .bronze img {
-    max-width: 125px;
-    max-height: 75px; }
 
 section#partners {
   text-align: center;
