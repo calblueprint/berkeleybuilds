@@ -120,6 +120,16 @@ i:hover {
   box-shadow: 0px 0px 10px #ddd;
 }
 
+.berkeley_builds-logo {
+  background-image: url("../img/2017bb-lightbulb.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 5px;
+  height: 80px;
+  width: 80px;
+}
+
 /* Home */
 
 .home {
@@ -232,15 +242,49 @@ i:hover {
   background-image: url("../img/nonprofits/tfa.png");
 }
 
-.berkeley_builds-logo {
-  background-image: url("../img/2017bb-lightbulb.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 5px;
-  height: 80px;
-  width: 80px;
-}
+/* Sponsors */
+
+section#sponsors {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  section#sponsors .sponsors {
+    background-color: #ffffff; }
+  section#sponsors p {
+    color: #0b3b4b;
+    font-size: 1.4em;
+    padding: 16px;
+    margin: 0; }
+  section#sponsors img {
+    opacity: 0.75;
+    padding: 1.5em;
+    vertical-align: middle; }
+  section#sponsors .tier {
+    padding: 0 5%; }
+  section#sponsors a, section#sponsors a:visited {
+    text-decoration: none; }
+  section#sponsors img:hover {
+    opacity: 1; }
+  section#sponsors .super-plat img {
+    max-width: 400px;
+    max-height: 150px; }
+  section#sponsors .plat img {
+    max-width: 350px;
+    max-height: 200px; }
+  section#sponsors .gold img {
+    max-width: 250px;
+    max-height: 125px; }
+  section#sponsors .silver img {
+    max-width: 150px;
+    max-height: 100px; }
+  section#sponsors .bronze img {
+    max-width: 125px;
+    max-height: 75px; }
+
+section#partners {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px; }
 
 /* Footer */
 
