@@ -70,6 +70,9 @@ a:hover, a:focus, a:active {
   margin-bottom: 15px;
 }
 
+body {
+  background-color: #fdfdfd;
+}
 /* Home */
 
 .home {
@@ -77,32 +80,34 @@ a:hover, a:focus, a:active {
   height: 700px;
   position: relative;
   padding: 200px 60px 0px 60px;
-  background-color: #5DCCCB;
 }
 
 .home-title {
   font-family: Phenomena, Helvetica, Arial,  sans-serif;
-  font-size:74px;
+  font-size: 100px;
   color: #5DCCCB;
   line-height: 72px;
 }
 
-.home-sub-title{
-    font-size: 36px;
-    color: #5DCCCB;
+.home-sub-title {
+  font-size: 36px;
+  color: #FFD454;
+  margin-top: -35px;
+  margin-bottom: 50px;
 }
 
-.home-info{
-    margin-top: 20px;
-    font-size: 23px;
+.home-info {
+  margin-top: 10px;
+  font-size: 28px;
 }
 
-.home-button{
-    font-family: Phenomena, Helvetica, Arial,  sans-serif;
-    font-size:24px;
-    color: #FFD454;
-    line-height: 72px;
-    text-transform: uppercase;
+.home-apply-button {
+  font-family: Phenomena, Helvetica, Arial,  sans-serif;
+  font-size: 36px;
+  color: #FFD454;
+  line-height: 72px;
+  text-transform: uppercase;
+  /* more button stuff*/
 }
 
 /* About */
@@ -189,4 +194,5 @@ a:hover, a:focus, a:active {
 .navbar {
   background-color: #ffffff;
   border: 0;
+  box-shadow: 0px 0px 10px #ddd;
 }
