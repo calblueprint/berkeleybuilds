@@ -70,6 +70,37 @@ a:hover, a:focus, a:active {
   margin-bottom: 15px;
 }
 
+/* Buttons */
+
+i {
+    display: inline-block;
+    border-radius: 100px;
+    border: 1px solid #737373;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+i:hover {
+    border: 1px solid transparent ;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.fa:before {
+    line-height: 28px;
+    color: #737373;
+}
+
 /* Home */
 
 .home {
