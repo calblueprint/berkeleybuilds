@@ -237,9 +237,9 @@ i:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 10px;
-  height: 75px;
-  width: 75px;
+  margin: 5px;
+  height: 80px;
+  width: 80px;
 }
 
 /* Footer */
@@ -247,5 +247,9 @@ i:hover {
 .footer {
   background: #fffefa;
   text-align: center;
+  padding-bottom: 35px;
 }
 
+.footer-logo {
+  width:150px;
+}
