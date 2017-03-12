@@ -168,7 +168,7 @@ i:hover {
 }
 
 /* Sections */
-
+/* TODO(shimmy): Probably a better alternative / better naming? */
 .section-body {
   width: 100%;
   max-width: 600px;
