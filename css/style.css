@@ -6,6 +6,7 @@ yellow: FFD454;
 */
 
 /* Typography */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 @font-face {
   font-family: "Phenomena";
@@ -18,7 +19,12 @@ yellow: FFD454;
 }
 
 p.customfont {
-  font-family: "Phenomena Bold", "Phenomena", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Phenomena Bold", "Phenomena", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #fdfdfd;
+  font-family: "Roboto", sans-serif; /* Can't seem to get this roboto thing working */
 }
 
 h1 {
@@ -70,10 +76,6 @@ a:hover, a:focus, a:active {
   margin-bottom: 15px;
 }
 
-body {
-  background-color: #fdfdfd;
-}
-
 /* Buttons */
 
 i {
@@ -103,6 +105,19 @@ i:hover {
 .fa:before {
     line-height: 28px;
     color: #737373;
+}
+
+/* Navbar */
+
+.navbar-nav li a, .navbar-header a {
+  line-height: 61px;
+  font-size: 16px;
+}
+
+.navbar {
+  background-color: #ffffff;
+  border: 0;
+  box-shadow: 0px 0px 10px #ddd;
 }
 
 /* Home */
@@ -136,10 +151,20 @@ i:hover {
 .home-apply-button {
   font-family: Phenomena, Helvetica, Arial,  sans-serif;
   font-size: 36px;
-  color: #FFD454;
+  color: #5DCCCB;
   line-height: 72px;
   text-transform: uppercase;
   /* more button stuff*/
+}
+
+/* Sections */
+
+.section-body {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* About */
@@ -217,15 +242,10 @@ i:hover {
   width: 75px;
 }
 
-/* Navbar */
+/* Footer */
 
-.navbar-nav li a, .navbar-header a {
-  line-height: 61px;
-  font-size: 16px;
+.footer {
+  background: #fffefa;
+  text-align: center;
 }
 
-.navbar {
-  background-color: #ffffff;
-  border: 0;
-  box-shadow: 0px 0px 10px #ddd;
-}
