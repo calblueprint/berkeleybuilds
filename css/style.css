@@ -2,46 +2,45 @@
 
 turquoise: 5DCCCB;
 yellow: FFD454;
+black: 011627;
+poop: EFE9E7;
+white: FFFFFF;
 
 */
 
 /* Typography */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 
 @font-face {
   font-family: "Phenomena";
   src: url(../fonts/Phenomena-Regular.otf) format("truetype");
 }
 
-@font-face {
-  font-family: "Phenomena Bold";
-  src: url(../fonts/Phenomena-Bold.otf) format("truetype");
-}
-
-p.customfont {
-  font-family: "Roboto", "Phenomena Bold", "Phenomena", Helvetica, Arial, sans-serif;
-}
-
 body {
-  background-color: #fdfdfd;
-  font-family: "Roboto", sans-serif; /* Can't seem to get this roboto thing working */
+  background-color: #FFFFFF;
+  font-family: "Lato", times, sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", Helvetica, Arial,  sans-serif;
+  font-weight: 900;
 }
 
 h1 {
-  font-family: "Phenomena Bold", Helvetica, Arial,  sans-serif;
   font-size: 36px;
   text-transform: uppercase;
   margin-bottom: 50px;
+  margin-top: 0px;
 }
 
 h2 {
-  font-family: "Phenomena Bold", Helvetica, Arial,  sans-serif;
-  font-size: 20px;
+  font-size: 32px;
+  margin-bottom: 25px;
 }
 
 h3 {
-  font-family: "Phenomena Bold", Helvetica, Arial,  sans-serif;
-  font-size: 15px;
+  font-size: 22px;
 }
 
 p {
@@ -51,22 +50,16 @@ p {
 }
 
 a {
-  color: #666;
-  border-bottom: 4px solid #ffffff;
+  color: #011627;
+  border-bottom: 2px solid #FFD454;
   text-decoration: none;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 a:hover, a:focus, a:active {
   color: #FFD454;
   text-decoration: none;
-  border-bottom: 4px solid #FFD454;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
+  border-bottom: 2px solid #FFD454;
   transition: all 0.2s;
   cursor: pointer;
 }
@@ -76,52 +69,32 @@ a:hover, a:focus, a:active {
   margin-bottom: 15px;
 }
 
-/* Buttons */
-
-i {
-    display: inline-block;
-    border-radius: 100px;
-    border: 1px solid #737373;
-    width: 30px;
-    height: 30px;
-    margin-top: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-i:hover {
-    border: 1px solid transparent ;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    cursor: pointer;
-}
-
-.fa:before {
-    line-height: 28px;
-    color: #737373;
-}
-
 /* Navbar */
 
 .navbar-nav li a, .navbar-header a {
+  color: #011627;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 700;
   line-height: 61px;
   font-size: 16px;
+  border-bottom: 4px solid #ffffff;
+  margin-left: 10px;
+}
+
+.navbar-nav li a:hover {
+  color: #FFD454;
+  border-bottom: 4px solid #FFD454;
+  background-color:inherit;
 }
 
 .navbar {
   background-color: #ffffff;
   border: 0;
-  box-shadow: 0px 0px 10px #ddd;
+  box-shadow: 0px 0px 10px #eee;
 }
 
 .berkeley_builds-logo {
-  background-image: url("../img/2017bb-lightbulb.svg");
+  background-image: url("../img/2017bb-lightbulb.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -130,17 +103,29 @@ i:hover {
   width: 80px;
 }
 
+.navbar-fixed-top .navbar-collapse {
+  max-height: none;
+}
+
+.navbar-toggle .icon-bar {
+  width: 30px;
+  height: 4px;
+  background-color: #011627;
+}
+
+button.navbar-toggle {
+  margin-top: 25px;
+}
+
 /* Home */
 
-.home {
-  width: 100%;
-  height: 700px;
-  position: relative;
-  padding: 200px 60px 0px 60px;
+.home-container {
+  background: #EFE9E7;
+  padding-top: 200px;
 }
 
 .home-title {
-  font-family: Phenomena, Helvetica, Arial,  sans-serif;
+  font-family: "Phenomena", Helvetica, Arial,  sans-serif;
   font-size: 100px;
   color: #5DCCCB;
   line-height: 72px;
@@ -159,22 +144,37 @@ i:hover {
 }
 
 .home-apply-button {
-  font-family: Phenomena, Helvetica, Arial,  sans-serif;
+  display: inline-block;
+  font-family: "Phenomena", Helvetica, Arial,  sans-serif;
   font-size: 36px;
   color: #5DCCCB;
-  line-height: 72px;
-  text-transform: uppercase;
-  /* more button stuff*/
+  border: solid 2px #5DCCCB;
+  padding: 5px 15px;
+  border-radius: 4px;
+  margin-top: 35px;
+  margin-bottom: 100px;
+}
+
+.home-apply-button:hover {
+  color: #fff;
+  background-color: #5DCCCB;
+  border-color: #5DCCCB;
 }
 
 /* Sections */
 /* TODO(shimmy): Probably a better alternative / better naming? */
 .section-body {
   width: 100%;
-  max-width: 600px;
+  max-width: 950px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0px auto;
   position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.nonprofits-container {
+  background-color: #FFD454;
 }
 
 /* About */
@@ -188,6 +188,16 @@ i:hover {
   margin: 15px;
   display: inline-block;
   opacity: 0.6;
+  transition: all 0.3s;
+}
+
+a.cohost, a.nonprofit {
+  border-bottom: none;
+}
+
+a.cohost:hover, a.nonprofit:hover {
+  border-bottom: none;
+  opacity: 1.0;
 }
 
 .cohost.blueprint-logo {
@@ -226,7 +236,7 @@ i:hover {
   background-image: url("../img/nonprofits/back2daroots.png");
 }
 
-.bawar-logo {
+.nonprofit.bawar-logo {
   background-image: url("../img/nonprofits/bawar.png");
 }
 
@@ -243,55 +253,23 @@ i:hover {
 }
 
 /* Sponsors */
-
-section#sponsors {
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+.sponsors-container {
+  background-color: #EFE9E7;
 }
-  section#sponsors .sponsors {
-    background-color: #ffffff;
-  }
 
-  section#sponsors p {
-    color: #0b3b4b;
-    font-size: 1.4em;
-    padding: 16px;
-    margin: 0;
-  }
+section#sponsors img {
+  opacity: 0.75;
+  padding: 1.5em;
+  vertical-align: middle;
+}
 
-  section#sponsors img {
-    opacity: 0.75;
-    padding: 1.5em;
-    vertical-align: middle;
-  }
+section#sponsors a, section#sponsors a:visited {
+  text-decoration: none;
+}
 
-  section#sponsors .tier {
-    padding: 0 5%;
-  }
-
-  section#sponsors a, section#sponsors a:visited {
-    text-decoration: none;
-  }
-
-  section#sponsors img:hover {
-    opacity: 1;
-  }
-
-  section#sponsors .gold img {
-    max-width: 400px;
-    max-height: 150px;
-  }
-
-  section#sponsors .silver img {
-    max-width: 350px;
-    max-height: 200px;
-  }
-
-  section#sponsors .bronze img {
-    max-width: 250px;
-    max-height: 125px;
-  }
+section#sponsors img:hover {
+  opacity: 1;
+}
 
 section#partners {
   text-align: center;
@@ -299,14 +277,67 @@ section#partners {
   padding-bottom: 40px;
 }
 
+.sponsor-grid img {
+  width: 150px;
+  padding: 10px;
+}
+
+.sponsor-grid a {
+  border: none;
+}
+
 /* Footer */
 
 .footer {
-  background: #fffefa;
+  background: #011627;
   text-align: center;
   padding-bottom: 35px;
+  padding-top: 35px;
+  color: #737373;
 }
 
 .footer-logo {
-  width:150px;
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+}
+
+.footer a {
+  border: none;
+  color: #737373;
+}
+
+.footer a i {
+  display: inline-block;
+  border-radius: 80px;
+  border: 2px solid #737373;
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+.footer a i:hover {
+  border: 2px solid #FFD454;
+  color: #FFD454;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.fa:before {
+  line-height: 36px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .home-title {
+    font-size: 65px;
+    line-height: 50px;
+  }
+
+  .home-sub-title {
+    font-size: 30px;
+  }
 }
