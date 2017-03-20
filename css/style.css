@@ -117,11 +117,28 @@ button.navbar-toggle {
   margin-top: 25px;
 }
 
+.logo-text {
+  display: inline-block;
+  color: #5DCCCB;
+  font-family: "Phenomena", Helvetica, Arial,  sans-serif;
+}
+
 /* Home */
 
 .home-container {
+  position: relative;
   background: #EFE9E7;
+  background-image: url("../img/DSC_0442.jpg");
+  background-size: cover;
   padding-top: 200px;
+}
+
+.home-shade {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-top: -200px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .home-title {
@@ -141,6 +158,7 @@ button.navbar-toggle {
 .home-info {
   margin-top: 10px;
   font-size: 28px;
+  color: #fff;
 }
 
 .home-apply-button {
@@ -228,24 +246,12 @@ a.cohost:hover, a.nonprofit:hover {
   background-image: url("../img/nonprofits/rishi.png");
 }
 
-.nonprofit.acumen-logo {
-  background-image: url("../img/nonprofits/acumen.png");
+.nonprofit.health_leads-logo {
+  background-image: url("../img/nonprofits/healthleads.png");
 }
 
-.nonprofit.back_to_the_roots-logo {
-  background-image: url("../img/nonprofits/back2daroots.png");
-}
-
-.nonprofit.bawar-logo {
-  background-image: url("../img/nonprofits/bawar.png");
-}
-
-.nonprofit.easy_does_it-logo {
-  background-image: url("../img/nonprofits/ezdoesit.png");
-}
-
-.nonprofit.root_and_rebound-logo {
-  background-image: url("../img/nonprofits/rootandrebound.png");
+.nonprofit.ceri-logo {
+  background-image: url("../img/nonprofits/ceri.png");
 }
 
 .nonprofit.teach_for_america-logo {
